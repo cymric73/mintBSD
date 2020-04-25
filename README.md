@@ -1,0 +1,2 @@
+# mintbsd
+OpenBSD desktop configuration
