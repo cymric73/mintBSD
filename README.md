@@ -1,14 +1,3 @@
 # mintBSD
 ## OpenBSD desktop configuration
-### cmd
-```
-# makeminty-openbsd67.sh
-```
-### pre-req
-OpenBSD 6.7 
-(with X selected during OS install)
-
-### screenshot
-```
-file: mintbsd-screenshot.PNG 
-```
+Visit [mintBSD.com](https://mintBSD.com "mintBSD") for documentation.
