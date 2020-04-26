@@ -3,6 +3,7 @@ MintBSD is a configuration script for OpenBSD 6.7 (beta) that will convert a fre
 
 ## Usage instructions
 Step 1) Install OpenBSD 6.7 (beta) with X11
+
 Step 2) Post OS installation, run the following commands as root:
 ```
 # pkg_add wget
