@@ -2,8 +2,8 @@
 MintBSD is a configuration script for OpenBSD 6.7 (beta) that will convert a fresh OS install (with X11) into a graphical desktop workstation.  The goal of the project is to create a stable, usable and familiar desktop experience.  We achieve this using OpenBSD ports software and minimal configuration as required.  MintBSD is not a distro or theme.  
 
 ## Usage instructions
-1. Install OpenBSD 6.7 (beta) with X11
-2. Post installation, run the following commands as root:
+Step 1) Install OpenBSD 6.7 (beta) with X11
+Step 2) Post OS installation, run the following commands as root:
 ```
 # pkg_add wget
 # wget https://github.com/cymric73/mintBSD/raw/master/makeminty-openbsd67.sh
