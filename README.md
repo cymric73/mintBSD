@@ -1,4 +1,4 @@
-# mintbsd
+# mintBSD
 ## OpenBSD desktop configuration
 ### cmd
 ```
