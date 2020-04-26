@@ -42,7 +42,17 @@ gsettings set org.mate.background primary-color 'rgb(80,80,117)'
 echo "user-db:user" > /etc/dconf/profile/user
 echo "system-db:local" >> /etc/dconf/profile/user
 mkdir /etc/dconf/db/local.d
-# PUT mintbsd_local_dconf_settings into this folder
+
+# write /etc/dconf/db/local.d/mintbsd_local_dconf_settings
+echo "[org/mate/marco/general]
+compositing-manager=false
+
+[org/mate/desktop/background]
+picture-filename=''
+color-shading-type='solid'
+primary-color='rgb(80,80,117)'
+" > /etc/dconf/db/local.d/mintbsd_local_dconf_settings
+
 dconf compile /etc/dconf/db/local /etc/dconf/db/local.d
 dconf update 
 
