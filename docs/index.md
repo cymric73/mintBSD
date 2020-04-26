@@ -5,7 +5,7 @@ MintBSD is a configuration script for OpenBSD 6.7 (beta) that will convert a fre
 2. Post installation, run the following commands as root:
 ```
 # pkg_add wget
-# wget https://raw.githubusercontent.com/cymric73/mintBSD/master/makeminty-openbsd67.sh
+# wget https://github.com/cymric73/mintBSD/raw/master/makeminty-openbsd67.sh
 # chmod u+x ./makeminty-openbsd67.sh
 # ./makeminty-openbsd67.sh
 ```
