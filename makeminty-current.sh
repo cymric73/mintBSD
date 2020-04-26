@@ -3,7 +3,7 @@
 # sysupgrade -s # get OpenBSD6.7 via current
 
 ### check free space on /usr/local prior to install
-# e.g. 80GB HDD, post OS install 218K used, 10.7G avail
+### package require ~5GB of space
 
 ### install packages
 pkg_add unzip-6.0p13 \
@@ -16,8 +16,10 @@ nano wget git openvpn-2.4.7p1 htop \
 chromium \
 libreoffice thunderbird gimp dia \
 transmission transmission-gtk filezilla \
-vlc handbrake \
-keepassx clamav 
+vlc handbrake keepassx 
+
+### recommended but not installed
+# pkg_add clamav keybase 
 
 ### enable setting / daemons
 rcctl disable xenodm
@@ -38,24 +40,22 @@ gsettings set org.mate.background picture-filename ''
 gsettings set org.mate.background color-shading-type 'solid'
 gsettings set org.mate.background primary-color 'rgb(80,80,117)'
 
-# DCONF settings
+### DCONF settings
 echo "user-db:user" > /etc/dconf/profile/user
 echo "system-db:local" >> /etc/dconf/profile/user
 mkdir /etc/dconf/db/local.d
-
 # write /etc/dconf/db/local.d/mintbsd_local_dconf_settings
 echo "[org/mate/marco/general]
 compositing-manager=false
-
 [org/mate/desktop/background]
 picture-filename=''
 color-shading-type='solid'
 primary-color='rgb(80,80,117)'
 " > /etc/dconf/db/local.d/mintbsd_local_dconf_settings
-
 dconf compile /etc/dconf/db/local /etc/dconf/db/local.d
 dconf update 
 
-echo "\n### makeMinty is DONE!"
-echo "### Copy /etc/skel/.xinitrc to home directory of each user to enable graphical login"
+### end of script OUTPUT
+echo "\n### makeminty has completed ###"
+echo "# Copy /etc/skel/.xinitrc to home directory of each user to enable graphical login"
  
