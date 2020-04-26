@@ -9,4 +9,6 @@ OpenBSD 6.7
 (with X selected during OS install)
 
 ### screenshot
-see mintbsd-screenshot.PNG 
+```
+file: mintbsd-screenshot.PNG 
+```
