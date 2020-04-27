@@ -15,6 +15,8 @@ Run the following commands as root:
 # chmod u+x ./makeminty.sh
 # ./makeminty.sh
 ```
+### Summary of results
+Install GUI desktop login and window manager (slim & caja). Install popular applications: Chromium, LibreOffice, Gimp, VLC. Configure sensible and professional desktop window defaults.
 
 ### Post steps:
 1. Copy /etc/skel/.xinitrc to home directory of each user to enable graphical login, e.g. 
