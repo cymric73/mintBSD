@@ -3,15 +3,21 @@ MintBSD is a configuration script for [OpenBSD](https://openbsd.org "OpenBSD") 6
 *MintBSD is not a distro or MATE theme.*  
 
 ## Usage instructions
-Step 1) Install OpenBSD 6.7 (beta) with X11
+### Pre-Req: 
+1. OS Install of OpenBSD 6.7 (beta) with X11
+2. `df -h /usr/local` # <5GB free space 
 
-Step 2) Post OS installation, run the following commands as root:
+### Start
+Run the following commands as root:
 ```
 # pkg_add wget
 # wget https://www.mintbsd.com/makeminty.sh
 # chmod u+x ./makeminty.sh
 # ./makeminty.sh
 ```
+
+### Post steps:
+1. Copy /etc/skel/.xinitrc to home directory of each user to enable graphical login, e.g. `# cp /etc/skel/.xinitrc /home/jsmith`
 
 ## Screenshot
 [Desktop post login](https://www.mintbsd.com/mintbsd-screenshot.png "mintBSD desktop screenshot")
