@@ -1,4 +1,4 @@
-MintBSD is a configuration script for [OpenBSD](https://openbsd.org "OpenBSD") 6.7 (beta) that will configure an OpenBSD install (with X11) into a [MATE](https://mate-desktop.org/ "MATE desktop environment") graphical desktop workstation.  The goal of the project is to create a stable and familiar desktop experience, with commonly used desktop application.  We achieve this using OpenBSD ports software and minimal configuration as required.
+MintBSD is a configuration script for [OpenBSD](https://openbsd.org "OpenBSD") 6.7 (beta) that will configure an OpenBSD install (with X11) into a [MATE](https://mate-desktop.org/ "MATE desktop environment") graphical desktop workstation.  The goal of the project is to create a stable and familiar desktop experience, bundled with commonly used desktop applications.  We achieve this using OpenBSD ports software and minimal configuration as required.
 *MintBSD is not a distro or MATE theme.*  
 
 ## Usage instructions
