@@ -19,9 +19,7 @@ Run the following commands as root:
 Install GUI desktop login and window manager (slim & caja). Install popular applications: Chromium, LibreOffice, Gimp, VLC. Configure sensible and professional desktop window defaults.
 
 ### Post steps:
-1. Copy /etc/skel/.xinitrc to home directory of each user to enable graphical login, e.g. 
-
-`# cp /etc/skel/.xinitrc /home/jsmith`
+1. `# cp /etc/skel/.xinitrc /home/jsmith` copy /etc/skel/.xinitrc to home directory of each user to enable graphical login.
 
 ## Screenshot
 [Login screen](https://www.mintbsd.com/mintbsd-login-screenshot.png "mintBSD login screen")
