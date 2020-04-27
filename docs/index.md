@@ -22,6 +22,7 @@ Run the following commands as root:
 `# cp /etc/skel/.xinitrc /home/jsmith`
 
 ## Screenshot
+[Login screen](https://www.mintbsd.com/mintbsd-login-screenshot.png "mintBSD login screen")
 [Desktop post login](https://www.mintbsd.com/mintbsd-screenshot.png "mintBSD desktop screenshot")
 
 ## Motivation
