@@ -18,6 +18,7 @@ Run the following commands as root:
 
 ### Post steps:
 1. Copy /etc/skel/.xinitrc to home directory of each user to enable graphical login, e.g. 
+
 `# cp /etc/skel/.xinitrc /home/jsmith`
 
 ## Screenshot
