@@ -22,7 +22,7 @@ Install GUI desktop login and window manager (slim & caja). Install popular appl
 1. `# cp /etc/skel/.xinitrc /home/jsmith` copy /etc/skel/.xinitrc to home directory of each user to enable graphical login.
 
 ## Screenshot
-[Login screen](https://www.mintbsd.com/mintbsd-login-screenshot.png "mintBSD login screen")
+[Login screen](https://www.mintbsd.com/mintbsd-login-screen.png "mintBSD login screen")
 
 [Desktop post login](https://www.mintbsd.com/mintbsd-screenshot.png "mintBSD desktop screenshot")
 
