@@ -13,7 +13,7 @@ Step 2) Post OS installation, run the following commands as root:
 ```
 
 ## Screenshot
-[Desktop post login](https://raw.githubusercontent.com/cymric73/mintBSD/master/mintbsd-screenshot.PNG "mintBSD desktop screenshot")
+[Desktop post login](https://www.mintbsd.com/mintbsd-screenshot.png "mintBSD desktop screenshot")
 
 ## Motivation
 OpenBSD is a stellar opeating system.  By default it comes with a VERY basic desktop when selected during OS installation. Configuring a more complete and user-friendly desktop environment can be daunting task.  This project simplifies the configuration of the commonly used and familiar MATE desktop under OpenBSD.  Enjoy!
