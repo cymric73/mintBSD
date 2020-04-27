@@ -5,7 +5,7 @@ MintBSD is a configuration script for [OpenBSD](https://openbsd.org "OpenBSD") 6
 ## Usage instructions
 ### Pre-Req: 
 1. OS Install of OpenBSD 6.7 (beta) with X11
-2. `df -h /usr/local` # <5GB free space 
+2. `df -h /usr/local` you will need at least 5GB free space on the /usr/local partition.  Based on default OpenBSD installer auto-partion rules, you would have needed to have started with an 80 GB HDD allocation.
 
 ### Start
 Run the following commands as root:
@@ -17,7 +17,8 @@ Run the following commands as root:
 ```
 
 ### Post steps:
-1. Copy /etc/skel/.xinitrc to home directory of each user to enable graphical login, e.g. `# cp /etc/skel/.xinitrc /home/jsmith`
+1. Copy /etc/skel/.xinitrc to home directory of each user to enable graphical login, e.g. 
+`# cp /etc/skel/.xinitrc /home/jsmith`
 
 ## Screenshot
 [Desktop post login](https://www.mintbsd.com/mintbsd-screenshot.png "mintBSD desktop screenshot")
