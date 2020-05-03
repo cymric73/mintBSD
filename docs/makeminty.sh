@@ -11,15 +11,13 @@ slim slim-themes \
 mate-desktop mate-session-manager mate-control-center \
 mate-menus mate-panel mate-notification-daemon \
 mate-system-monitor mate-terminal mate-calc \
-mate-extras mate-media mate-utils mate-themes mate-icon-theme dconf-editor\
-nano wget git openvpn-2.4.7p1 htop \
+mate-extras mate-media mate-utils mate-themes mate-icon-theme dconf-editor \
+nano wget git htop \
 chromium \
-libreoffice thunderbird gimp dia \
+libreoffice evolution evolution-ews gimp dia \
 transmission transmission-gtk filezilla \
-vlc handbrake keepassx 
-
-### recommended but not installed
-# pkg_add clamav keybase 
+vlc handbrake audacity \
+keepassx openvpn-2.4.9
 
 ### enable setting / daemons
 rcctl disable xenodm
