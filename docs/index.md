@@ -3,7 +3,7 @@ MintBSD is a configuration script for [OpenBSD](https://openbsd.org "OpenBSD") 6
 *MintBSD is not a distro or MATE theme.*  
 
 ## Usage instructions
-### Pre-Req: 
+### Pre-requisites
 1. OS Install of OpenBSD 6.7 (beta) with X11
 2. `df -h /usr/local` you will need at least 5GB free space on the /usr/local partition.  Based on default OpenBSD installer auto-partion rules, you would need to start with an 80GB or greater HDD allocation.
 
@@ -16,7 +16,7 @@ Run the following commands as root:
 # ./makeminty.sh
 ```
 ### Summary of results
-Install GUI desktop login and window manager (slim & caja). Install popular applications: Chromium, LibreOffice, Gimp, VLC. Configure sensible and professional desktop window defaults.
+Install GUI desktop login and window manager (slim & caja). Install popular applications: Chromium, Evolution, LibreOffice, GIMP, VLC. Configure sensible and professional desktop window defaults.
 
 ### Post steps:
 1. `# cp /etc/skel/.xinitrc /home/jsmith` copy template .xinitrc to home directory of each user you want to login graphically.
