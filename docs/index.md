@@ -16,7 +16,7 @@ Run the following commands as root:
 # ./makeminty.sh
 ```
 ### Summary of results
-Install GUI desktop login and window manager (slim & caja). Install popular applications: Chromium, Evolution, LibreOffice, GIMP, VLC. Configure sensible and professional desktop window defaults.
+Install GUI desktop login and window managers (slim & caja). Install popular applications: Chromium, Evolution, LibreOffice, GIMP, VLC, etc. Configure sensible and professional desktop window defaults.
 
 ### Post-requisites
 1. `# cp /etc/skel/.xinitrc /home/jsmith` copy template .xinitrc to home directory of each user you want to login graphically.
