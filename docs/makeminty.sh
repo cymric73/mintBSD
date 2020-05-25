@@ -1,16 +1,14 @@
 #!/bin/sh
 
-# sysupgrade -s # get OpenBSD6.7 via current
-
 ### check free space on /usr/local prior to install
-### package require ~5GB of space
+### all packages require at least 5GB of space
 
 ### install packages
 pkg_add unzip-6.0p13 \
 slim slim-themes \
 mate-desktop mate-session-manager mate-control-center \
 mate-menus mate-panel mate-notification-daemon \
-mate-system-monitor mate-terminal mate-calc \
+mate-system-monitor mate-terminal mate-calc gucharmap \
 mate-extras mate-media mate-utils mate-themes mate-icon-theme dconf-editor \
 nano wget git htop \
 chromium \
