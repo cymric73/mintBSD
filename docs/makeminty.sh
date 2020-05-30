@@ -36,7 +36,6 @@ sed -i.bak 's/^\(welcome_msg \).*/\1     Login/' /etc/slim.conf
 gsettings set org.mate.background picture-filename ''
 gsettings set org.mate.background color-shading-type 'solid'
 gsettings set org.mate.background primary-color 'rgb(80,80,117)'
-gsettings set org.mate.Marco.general theme 'Paper'
 
 ### DCONF settings
 echo "user-db:user" > /etc/dconf/profile/user
