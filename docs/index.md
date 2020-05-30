@@ -27,4 +27,4 @@ Install GUI desktop login and window managers (slim & caja). Install popular app
 [Desktop post login](https://www.mintbsd.com/mintbsd-screenshot.png "mintBSD desktop screenshot")
 
 ## Motivation
-OpenBSD is a outstanding opeating system.  By default it comes with a VERY basic desktop when selected during OS installation. Configuring a more complete and user-friendly desktop environment can be challenging task for anyone with little experience in this area of system administration.  This project simplifies the configuration of the commonly used and familiar MATE desktop under OpenBSD.  Enjoy!
+OpenBSD is an outstanding operating system.  By default it comes with a VERY basic desktop when selected during OS installation. Configuring a more complete and user-friendly desktop environment can be challenging task for anyone with little experience in this area of Unix-like system administration.  This project simplifies the configuration of the commonly used and familiar MATE desktop under OpenBSD.  Enjoy!
