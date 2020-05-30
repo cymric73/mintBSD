@@ -9,7 +9,8 @@ slim slim-themes \
 mate-desktop mate-session-manager mate-control-center \
 mate-menus mate-panel mate-notification-daemon \
 mate-system-monitor mate-terminal mate-calc gucharmap \
-mate-extras mate-media mate-utils mate-themes mate-icon-theme dconf-editor \
+mate-extras mate-media mate-utils mate-themes mate-icon-theme \
+paper-icon-theme-1.5.0p1 paper-gtk-theme-2.1.0p1 dconf-editor \
 nano wget git htop \
 chromium \
 libreoffice evolution evolution-ews gimp dia \
@@ -35,6 +36,7 @@ sed -i.bak 's/^\(welcome_msg \).*/\1     Login/' /etc/slim.conf
 gsettings set org.mate.background picture-filename ''
 gsettings set org.mate.background color-shading-type 'solid'
 gsettings set org.mate.background primary-color 'rgb(80,80,117)'
+gesttings set org.mate.Marco.general theme 'Paper'
 
 ### DCONF settings
 echo "user-db:user" > /etc/dconf/profile/user
