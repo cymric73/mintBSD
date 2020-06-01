@@ -14,7 +14,8 @@ OpenBSD supports only limited number of network interface cards.  Purchasing a s
 The Edimax N150 Wi-Fi Nano USB Adapter (PN: EW-7811UN) is a common choice. It can be purchsed from Amazon for about $20 (USD).  And with an ultra slim profile it's an ideal choice for laptops.
 
 ## Firmware
-```# fw_update
+```
+# fw_update
 ```
 
 ## Firmware manual install
@@ -23,27 +24,33 @@ http://firmware.openbsd.org/firmware/6.7/
 
 
 ## Control Commands
-```# sh /etc/netstart
+```
+# sh /etc/netstart
 ```
 # Battery
 Show battery status.
-```# apm
+```
+# apm
 ```
 # Display
 ## Brightness
-```# wsconsctl display.brightness=20%
+```
+# wsconsctl display.brightness=20%
 ```
 # System Adminsistration
 ## OS updates
-```# syspatch
+```
+# syspatch
 ```
 ## Software package updates
-```# pkg_add -u
+```
+# pkg_add -u
 ```
 ## Local Privilages
 WARNING! These commands will weaken your system security. 
 Members of the operator group have enhanced privilages such as the ability to write to raw data devices.
-```# usermod -S operator
+```
+# usermod -S operator
 # usermod -S staff
 ```
 ## User access to system resources - login.conf
@@ -54,26 +61,32 @@ Members of the operator group have enhanced privilages such as the ability to wr
 Insert USB media
 Type the following command to list device names
 
-```# sysctl hw.disknames
+```
+# sysctl hw.disknames
 ```
 Use dmesg command to get more info
-```# dmesg
+```
+# dmesg
 ```
 
 Use the disklabel command to get more info about sd2
-```# disklabel sd2
+```
+# disklabel sd2
 ```
 Note the letter assign to each partition, e.g. "i"
 
 Create a mount point directory
-```# mkdir /mnt/usb
+```
+# mkdir /mnt/usb
 ```
 Mount the partition
-```# mount /dev/sd2i /mnt/usb
+```
+# mount /dev/sd2i /mnt/usb
 ```
 
 Unmount when done
-```# unmount /mnt/usb
+```
+# unmount /mnt/usb
 ```
 
 ## Antivirus
@@ -85,12 +98,14 @@ Unmount when done
 ## sudo / doas
 OpenBSD uses doas instead of sudo.
 To enable the doas command you need to
-```# cp /etc/examples/doas.conf /etc
+```
+# cp /etc/examples/doas.conf /etc
 ```
 
 ### dmesg
 View system (console) messages such as start-up details and hardware detection notices.
-```# dmesg
+```
+# dmesg
 ```
 
 
