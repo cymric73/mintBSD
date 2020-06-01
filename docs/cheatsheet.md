@@ -1,8 +1,8 @@
 # MintBSD Cheatsheet
-This document is a collection of tips and useful commands you may need when administering your OpenBSD workstation.
+This document is a collection of tips and useful commands that may come in handy when operating your OpenBSD workstation.
 
-## Post makeminty steps
-In case you missed the instructions output at the end of the makeminty.sh install, here they are again:
+## Post MintBSD install steps
+In case you missed the instructions output at the end of the makeminty.sh install command, here they are again:
 
 Copy /etc/skel/.xinitrc to home directory of each user to enable graphical login.
 ```
@@ -11,12 +11,22 @@ Copy /etc/skel/.xinitrc to home directory of each user to enable graphical login
 
 ## WiFi Hardware
 
-OpenBSD supports only limited number of network interface cards.  Purchasing a supported USB Wi-Fi adapter is a great alternative to ensure hassle free network connectivity.
+OpenBSD only support a small number network interface cards.  Chances are the one in your computer isn't compatible.  Don't worry!  You can purchase a low-cost ultra-slim USB Wifi adapter for about $25 (USD).
 
-The Edimax N150 Wi-Fi Nano USB Adapter (PN: EW-7811UN) is a common choice. It can be purchsed from Amazon for about $20 (USD).  And with an ultra slim profile it's an ideal choice for laptops.
+The Edimax N150 Wi-Fi Nano USB Adapter (PN: EW-7811UN) is a common choice. It can be purchsed from Amazon.  And with an ultra slim design it's an ideal choice for laptops.
+
+See 'Firmware manual install' section below.
 
 ## Firmware manual install
-http://firmware.openbsd.org/firmware/6.7/
+Unfortunately the OpenBSD OS install media does not include firmware.  The firmware is added as part of the install process using an available Internet connection. Problem being if you need the firmware run your NIC to get on the Internet.  The Edimax N150 adapter needs the urtwn firware to run.  Here's the process to install via USB.
+
+1. Using another computer with Internet access download this file: [http://firmware.openbsd.org/firmware/6.7/urtwn-firmware-20180103.tgz](http://firmware.openbsd.org/firmware/6.7/urtwn-firmware-20180103.tgz)
+2. Copy to a USB drive.
+3. Copy from USB drive to OpenBSD workstation. (See _Access to USB data storage devices_ below.)
+4. Untar/zip: `# tar zxvf urtwn-firmware-20180103.tgz`
+5. `# cd firmware`
+6. `# cp ur* /etc/firmware`
+
 
 ## Restart Networks
 If you are using a laptop and you close the lid, your device might go into sleep/power-savings mode.  Upon resumption often the network remains down.  Use this command to restart your network devices.
