@@ -101,19 +101,16 @@ Unmount when done
 ```
 
 ## Antivirus
+See ClamAV
 
-## Security Report
-
-## Other Tools
-
-## sudo / doas
+## Do as root: doas (similar to sudo)
 OpenBSD uses doas instead of sudo.  The following steps enable doas and add yourself to the wheel group.
 ```
 # cp /etc/examples/doas.conf /etc
 # usermod -S wheel jsmith
 ```
 
-### dmesg
+### Console messages - dmesg
 View system (console) messages such as start-up details and hardware detection notices.
 ```
 # dmesg
