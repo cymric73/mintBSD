@@ -44,10 +44,15 @@ mkdir /etc/dconf/db/local.d
 # write /etc/dconf/db/local.d/mintbsd_local_dconf_settings
 echo "[org/mate/marco/general]
 compositing-manager=false
+num-workspaces=2
+theme='Paper'
 [org/mate/desktop/background]
 picture-filename=''
 color-shading-type='solid'
 primary-color='rgb(80,80,117)'
+[org/mate/desktop/interface]
+gtk-theme='Paper'
+icon-theme='Paper'
 " > /etc/dconf/db/local.d/mintbsd_local_dconf_settings
 dconf compile /etc/dconf/db/local /etc/dconf/db/local.d
 dconf update 
