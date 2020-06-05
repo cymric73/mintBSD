@@ -22,9 +22,11 @@ Install GUI desktop login and window managers (slim & caja). Install popular app
 1. `# cp /etc/skel/.xinitrc /home/jsmith` copy template .xinitrc to home directory of each user you want to login graphically.
 
 ## Screenshots
-[Login screen](https://www.mintbsd.com/mintbsd-login-screen.png "mintBSD login screen")
+[Login screen](https://www.mintbsd.com/img/login.png "mintBSD login screen")
 
-[Desktop post login](https://www.mintbsd.com/mintbsd-screenshot.png "mintBSD desktop screenshot")
+[Desktop](https://www.mintbsd.com/img/desktop.png "mintBSD desktop screenshot")
+
+[Desktop with open applications](https://www.mintbsd.com/img/desktop-with-apps.png "mintBSD desktop with apps screenshot")
 
 ## New to OpenBSD
 See our [cheatsheet](cheatsheet.html) for common OpenBSD tasks & settings.
