@@ -11,7 +11,7 @@ mate-menus mate-panel mate-notification-daemon \
 mate-system-monitor mate-terminal mate-calc gucharmap \
 mate-extras mate-media mate-utils mate-themes mate-icon-theme \
 paper-icon-theme-1.5.0p1 paper-gtk-theme-2.1.0p1 dconf-editor \
-nano wget git htop \
+nano wget git htop xmlstarlet \
 chromium \
 libreoffice evolution evolution-ews gimp dia \
 transmission transmission-gtk filezilla \
