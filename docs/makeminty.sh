@@ -25,12 +25,14 @@ rcctl enable avahi_daemon
 rcctl enable slim
 
 ### set xinitrc to enable mate session
-echo "exec mate-session" >> /etc/skel/.xinitrc
+echo "exec mate-session" > /etc/skel/.xinitrc
 
 ### customize slim login window
 cp /etc/slim.conf /etc/slim.conf.preMakeMinty.bak
-sed -i.bak 's/^\(current_theme \).*/\1     previous/' /etc/slim.conf
+sed -i.bak 's/^\(current_theme \).*/\1     wave/' /etc/slim.conf
 sed -i.bak 's/^\(welcome_msg \).*/\1     Login/' /etc/slim.conf
+mv /usr/local/share/slim/themes/wave/background.jpg /usr/local/share/slim/themes/wave/background.jpg.bak 
+cp /usr/local/share/slim/themes/previous/background.png /usr/local/share/slim/themes/wave/background.png
 
 # default background at login = Sun purple
 gsettings set org.mate.background picture-filename ''
