@@ -1,10 +1,10 @@
-MintBSD is a configuration script for [OpenBSD](https://openbsd.org "OpenBSD") 6.7 that will configure an OpenBSD install (with X11) into a [MATE](https://mate-desktop.org/ "MATE desktop environment") graphical desktop workstation.  The goal of the project is to create a stable and familiar desktop experience, bundled with commonly used desktop applications.  We achieve this using OpenBSD ports software and minimal configuration as required.
+MintBSD is a configuration script for [OpenBSD](https://openbsd.org "OpenBSD") 6.7 that will transform an OpenBSD install (with X11) into a [MATE](https://mate-desktop.org/ "MATE desktop environment") desktop workstation.  The goal of the project is to create a stable, usable and familiar desktop experience, bundled with commonly used desktop applications.  We achieve this using OpenBSD ports software and minimal configuration as required.
 
 *MintBSD is not a distro or MATE theme.*  
 
 ## Usage instructions
 ### Pre-requisites
-1. OS Install of OpenBSD 6.7 with X11
+1. OS Install of OpenBSD 6.7 with X11 and all sets.
 2. `df -h /usr/local` you will need at least 5GB free space on the /usr/local partition.  Based on default OpenBSD installer auto-partion rules, you would need to start with an 80GB or greater HDD allocation.
 
 ### Start
@@ -16,7 +16,7 @@ Run the following commands as root:
 # ./makeminty.sh
 ```
 ### Summary of results
-Install GUI desktop login and window managers (slim & caja). Install popular applications: Chromium, Evolution, LibreOffice, GIMP, VLC, etc. Configure sensible and professional desktop window defaults.
+Install GUI desktop login and window managers (slim & caja). Install popular applications: Chromium, Evolution, LibreOffice, GIMP, VLC, etc. Configure sensible and professional desktop window theme.
 
 ### Post-requisites
 1. `# cp /etc/skel/.xinitrc /home/jsmith` copy template .xinitrc to home directory of each user you want to login graphically.
@@ -25,6 +25,9 @@ Install GUI desktop login and window managers (slim & caja). Install popular app
 [Login screen](https://www.mintbsd.com/mintbsd-login-screen.png "mintBSD login screen")
 
 [Desktop post login](https://www.mintbsd.com/mintbsd-screenshot.png "mintBSD desktop screenshot")
+
+## New to OpenBSD
+See our [cheatsheet](cheatsheet.html) for common OpenBSD tasks & settings.
 
 ## Motivation
 OpenBSD is an outstanding operating system.  By default it comes with a VERY basic desktop when selected during OS installation. Configuring a more complete and user-friendly desktop environment can be challenging task for anyone with little experience in this area of Unix-like system administration.  This project simplifies the configuration of the commonly used and familiar MATE desktop under OpenBSD.  Enjoy!
