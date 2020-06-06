@@ -59,6 +59,11 @@ icon-theme='Paper'
 dconf compile /etc/dconf/db/local /etc/dconf/db/local.d
 dconf update 
 
+### Make window borders wide enough to click-on in order to resize
+sed -i.bak1 "s/<distance name=\"left_width\" value=\"1\" \/>/<distance name=\"left_width\" value=\"5\" \/>/g" /usr/local/share/themes/Paper/metacity-1/metacity-theme.xml
+sed -i.bak2 "s/<distance name=\"right_width\" value=\"1\" \/>/<distance name=\"right_width\" value=\"5\" \/>/g" /usr/local/share/themes/Paper/metacity-1/metacity-theme.xml
+sed -i.bak3 "s/<distance name=\"bottom_height\" value=\"1\" \/>/<distance name=\"bottom_height\" value=\"5\" \/>/g" /usr/local/share/themes/Paper/metacity-1/metacity-theme.xml
+
 ### end of script OUTPUT
 echo "\n### makeminty has completed ###"
 echo "# Copy /etc/skel/.xinitrc to home directory of each user to enable graphical login"
