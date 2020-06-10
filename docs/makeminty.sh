@@ -13,7 +13,7 @@ mate-extras mate-media mate-utils mate-themes mate-icon-theme \
 paper-icon-theme-1.5.0p1 paper-gtk-theme-2.1.0p1 dconf-editor \
 nano wget git htop xmlstarlet alpine \
 chromium \
-libreoffice evolution evolution-ews gimp dia \
+libreoffice evolution evolution-ews gimp dia bluefish grisbi \
 transmission transmission-gtk filezilla \
 vlc handbrake audacity \
 keepassx openvpn-2.4.9
