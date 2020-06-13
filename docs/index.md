@@ -4,7 +4,7 @@ MintBSD is a configuration script for [OpenBSD](https://openbsd.org "OpenBSD") 6
 
 ## Usage instructions
 ### Pre-requisites
-1. OS Install of OpenBSD 6.7 with X11 and all sets.
+1. OS Install of OpenBSD 6.7 with X11.
 2. `df -h /usr/local` you will need at least 5GB free space on the /usr/local partition.  Based on default OpenBSD installer auto-partion rules, you would need to start with an 80GB or greater HDD allocation.
 
 ### Start
@@ -16,7 +16,7 @@ Run the following commands as root:
 # ./makeminty.sh
 ```
 ### Summary of results
-Install GUI desktop login and window managers (slim & caja). Install popular applications: Chromium, Evolution, LibreOffice, GIMP, VLC, etc. Configure sensible and professional desktop window theme.
+Install MATE graphical deskop & popular applications: Chromium, LibreOffice, Evolution, VLC, GIMP, Tramsmission, Handbrake, Wireshare, etc. Configure sensible and professional desktop window theme.
 
 ### Post-requisites
 1. `# cp /etc/skel/.xinitrc /home/jsmith` copy template .xinitrc to home directory of each user you want to login graphically.
@@ -32,4 +32,4 @@ Install GUI desktop login and window managers (slim & caja). Install popular app
 See our [cheatsheet](cheatsheet.html) for common OpenBSD tasks & settings.
 
 ## Motivation
-OpenBSD is an outstanding operating system.  By default it comes with a VERY basic desktop when selected during OS installation. Configuring a more complete and user-friendly desktop environment can be challenging task for anyone with little experience in this area of Unix-like system administration.  This project simplifies the configuration of the commonly used and familiar MATE desktop under OpenBSD.  Enjoy!
+OpenBSD is an powerful operating system but is not often considered for the daily desktop use-case. By default it comes with a VERY basic desktop when selected during OS installation. Configuring a complete and user-friendly desktop environment can be challenging task for anyone with little experience in this area of Unix-like system configuration.  This project simplifies the configuration of the commonly used and familiar MATE desktop under OpenBSD.  Enjoy!
