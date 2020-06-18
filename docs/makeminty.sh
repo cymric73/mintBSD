@@ -48,6 +48,7 @@ echo "[org/mate/marco/general]
 compositing-manager=false
 num-workspaces=2
 theme='Paper'
+titlebar-font='Sans Bold 11'
 [org/mate/desktop/background]
 picture-filename=''
 color-shading-type='solid'
@@ -55,14 +56,11 @@ primary-color='rgb(80,80,117)'
 [org/mate/desktop/interface]
 gtk-theme='Paper'
 icon-theme='Paper'
-[org/mate/desktop/interface]
 monospace-font-name='Monospace 11'
 document-font-name='Sans 11'
 font-name='Sans 11'
 [org/mate/caja/desktop]
 font='Sans 11'
-[org/mate/marco/general]
-titlebar-font='Sans Bold 11'
 " > /etc/dconf/db/local.d/mintbsd_local_dconf_settings
 dconf compile /etc/dconf/db/local /etc/dconf/db/local.d
 dconf update 
