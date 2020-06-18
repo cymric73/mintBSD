@@ -61,7 +61,7 @@ document-font-name='Sans 11'
 font-name='Sans 11'
 [org/mate/caja/desktop]
 font='Sans 11'
-[org/mate/session]
+[org/mate/desktop/session]
 logout-timeout=5
 " > /etc/dconf/db/local.d/mintbsd_local_dconf_settings
 dconf compile /etc/dconf/db/local /etc/dconf/db/local.d
