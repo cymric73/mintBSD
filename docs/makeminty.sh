@@ -1,7 +1,33 @@
 #!/bin/sh
 
-### check free space on /usr/local prior to install
-### all packages require at least 5GB of space
+################ READ ME #########################
+# Check free space on /usr/local prior to install
+# All packages require at least 5GB of space
+##################################################
+
+### IF ROOT
+ID=$(id -u)
+if [ "$ID" -ne 0 ]
+  then echo "Please run as root"
+  exit
+fi
+
+### RUN EXTRAS IF '-x' ARG USED
+ARG1=$1
+if [[ $ARG1 = "-x" ]]
+then
+
+# Use CIRA Protected DNS, no malware, etc. Set for static and DHCP DNS
+echo "nameserver 149.112.121.20" > /etc/resolv.conf
+echo "nameserver 149.112.122.20" >> /etc/resolv.conf
+echo "supersede domain-name-servers 149.112.121.20, 149.112.122.20;" > /etc/dhclient.conf
+
+echo "Done running makeminty.sh extras"
+exit 0
+fi
+
+### END EXTRAS
+### MAIN CONFIG BEGINS
 
 ### install packages
 pkg_add unzip-6.0p13 \
@@ -75,4 +101,3 @@ sed -i.bak3 "s/<distance name=\"bottom_height\" value=\"1\" \/>/<distance name=\
 ### end of script OUTPUT
 echo "\n### makeminty has completed ###"
 echo "# Copy /etc/skel/.xinitrc to home directory of each user to enable graphical login"
- 
