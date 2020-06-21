@@ -99,5 +99,5 @@ sed -i.bak2 "s/<distance name=\"right_width\" value=\"1\" \/>/<distance name=\"r
 sed -i.bak3 "s/<distance name=\"bottom_height\" value=\"1\" \/>/<distance name=\"bottom_height\" value=\"5\" \/>/g" /usr/local/share/themes/Paper/metacity-1/metacity-theme.xml
 
 ### end of script OUTPUT
-echo "\n### makeminty has completed ###"
+echo "\n### makeminty.sh has completed ###"
 echo "# Copy /etc/skel/.xinitrc to home directory of each user to enable graphical login"
