@@ -32,6 +32,7 @@ fi
 ### install packages
 pkg_add unzip-6.0p13 \
 slim slim-themes \
+xfce xfce-extras xfce4-power-manager upower \
 mate-desktop mate-session-manager mate-control-center \
 mate-menus mate-panel mate-notification-daemon \
 mate-system-monitor mate-terminal mate-calc gucharmap \
@@ -39,19 +40,21 @@ mate-extras mate-media mate-utils mate-themes mate-icon-theme \
 paper-icon-theme-1.5.0p1 paper-gtk-theme-2.1.0p1 dconf-editor \
 nano wget git htop xmlstarlet alpine \
 chromium \
-libreoffice evolution evolution-ews gimp dia vym bluefish grisbi \
+libreoffice gimp dia vym bluefish grisbi \
 transmission transmission-gtk filezilla \
 vlc handbrake audacity \
 keepassx openvpn-2.4.9
 
 ### enable setting / daemons
-rcctl disable xenodm
+rcctl enable xenodm
 rcctl enable messagebus
 rcctl enable avahi_daemon
 rcctl enable slim
+rcctl enable apmd
+rcctl set apmd flags -A
 
 ### set xinitrc to enable mate session
-echo "exec mate-session" > /etc/skel/.xinitrc
+echo "exec startxfce4 --with-ck-launch" > /etc/skel/.xinitrc
 
 ### customize slim login window
 cp /etc/slim.conf /etc/slim.conf.preMakeMinty.bak
@@ -97,6 +100,8 @@ dconf update
 sed -i.bak1 "s/<distance name=\"left_width\" value=\"1\" \/>/<distance name=\"left_width\" value=\"5\" \/>/g" /usr/local/share/themes/Paper/metacity-1/metacity-theme.xml
 sed -i.bak2 "s/<distance name=\"right_width\" value=\"1\" \/>/<distance name=\"right_width\" value=\"5\" \/>/g" /usr/local/share/themes/Paper/metacity-1/metacity-theme.xml
 sed -i.bak3 "s/<distance name=\"bottom_height\" value=\"1\" \/>/<distance name=\"bottom_height\" value=\"5\" \/>/g" /usr/local/share/themes/Paper/metacity-1/metacity-theme.xml
+
+### Xfce mods coming soon
 
 ### end of script OUTPUT
 echo "\n### makeminty.sh has completed ###"
