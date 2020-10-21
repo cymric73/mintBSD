@@ -43,7 +43,7 @@ chromium \
 libreoffice gimp dia vym bluefish grisbi \
 transmission transmission-gtk filezilla \
 vlc handbrake audacity \
-keepassx openvpn-2.4.9
+keepassxc-2.6.1 openvpn-2.4.9
 
 ### enable setting / daemons
 rcctl enable xenodm
