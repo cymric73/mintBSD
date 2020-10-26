@@ -16,7 +16,7 @@ Run the following commands as root:
 # ./makeminty.sh
 ```
 ### Summary of results
-Install Xfce graphical deskop & popular applications: Chromium, LibreOffice, VLC, GIMP, Tramsmission, Handbrake, Wireshare, etc. Configure sensible and professional desktop window theme.
+Installs Xfce graphical deskop & popular applications: Chromium, LibreOffice, VLC, GIMP, Tramsmission, Handbrake, Wireshare, etc. Configure sensible and professional desktop window theme.
 
 ### Post-requisites
 1. `# cp /etc/skel/.xinitrc /home/jsmith` copy template .xinitrc to home directory of each user you want to login graphically.
