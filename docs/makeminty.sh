@@ -57,10 +57,10 @@ rcctl set apmd flags -A
 echo "exec startxfce4 --with-ck-launch" > /etc/skel/.xinitrc
 
 ### customize slim login window
-cp /etc/slim.conf /etc/slim.conf.preMakeMinty.bak
+cp /etc/slim.conf /etc/slim.conf.old
 sed -i.bak 's/^\(current_theme \).*/\1     wave/' /etc/slim.conf
 sed -i.bak 's/^\(welcome_msg \).*/\1     Login/' /etc/slim.conf
-mv /usr/local/share/slim/themes/wave/background.jpg /usr/local/share/slim/themes/wave/background.jpg.bak 
+mv /usr/local/share/slim/themes/wave/background.jpg /usr/local/share/slim/themes/wave/background.jpg.old 
 cp /usr/local/share/slim/themes/previous/background.png /usr/local/share/slim/themes/wave/background.png
 
 # default background at login = Sun purple
@@ -97,9 +97,9 @@ dconf compile /etc/dconf/db/local /etc/dconf/db/local.d
 dconf update 
 
 ### Make window borders wide enough to click-on in order to resize
-sed -i.bak1 "s/<distance name=\"left_width\" value=\"1\" \/>/<distance name=\"left_width\" value=\"5\" \/>/g" /usr/local/share/themes/Paper/metacity-1/metacity-theme.xml
-sed -i.bak2 "s/<distance name=\"right_width\" value=\"1\" \/>/<distance name=\"right_width\" value=\"5\" \/>/g" /usr/local/share/themes/Paper/metacity-1/metacity-theme.xml
-sed -i.bak3 "s/<distance name=\"bottom_height\" value=\"1\" \/>/<distance name=\"bottom_height\" value=\"5\" \/>/g" /usr/local/share/themes/Paper/metacity-1/metacity-theme.xml
+sed -i.old1 "s/<distance name=\"left_width\" value=\"1\" \/>/<distance name=\"left_width\" value=\"5\" \/>/g" /usr/local/share/themes/Paper/metacity-1/metacity-theme.xml
+sed -i.old2 "s/<distance name=\"right_width\" value=\"1\" \/>/<distance name=\"right_width\" value=\"5\" \/>/g" /usr/local/share/themes/Paper/metacity-1/metacity-theme.xml
+sed -i.old3 "s/<distance name=\"bottom_height\" value=\"1\" \/>/<distance name=\"bottom_height\" value=\"5\" \/>/g" /usr/local/share/themes/Paper/metacity-1/metacity-theme.xml
 
 ### Xfce mods coming soon
 
