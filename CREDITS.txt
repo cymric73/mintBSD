@@ -1,0 +1,9 @@
+Pufferfish logo
+Title: Pufferfish
+Creator: Catalina Montes
+Source: https://thenounproject.com/search/?q=blow+fish&i=181195
+Licensed as Creative Commons CCBY
+
+Nordic-darker theme by EliverLara
+Source: https://github.com/EliverLara/Nordic
+Dist: https://www.xfce-look.org/p/1267246/
