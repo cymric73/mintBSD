@@ -2,7 +2,7 @@ MintBSD is a configuration script for [OpenBSD](https://openbsd.org "OpenBSD") 6
 
 *MintBSD is not a distro or theme.  However, this script will install the [Nordic-darker Xfce theme](https://www.xfce-look.org/p/1267246/ "Xfce theme Nordic-darker") .*  
 
-![mintBSD desktop](https://raw.githubusercontent.com/cymric73/mintBSD/master/docs/img/desktop.png "mintBSD desktop") <!-- .element width="50%" -->
+![mintBSD desktop](https://raw.githubusercontent.com/cymric73/mintBSD/master/docs/img/desktop.png "mintBSD desktop")
 
 ## Usage instructions
 ### Pre-requisites
@@ -38,4 +38,4 @@ See our [cheatsheet](cheatsheet.html) for common OpenBSD tasks & settings.
 OpenBSD is an powerful operating system but is not often considered for the daily desktop use-case. By default it comes with a VERY basic desktop when selected during OS installation. Configuring a complete and user-friendly desktop environment can be challenging task for anyone with little experience in this area of Unix-like system configuration.  This project simplifies the configuration of the commonly used and familiar Xfce desktop under OpenBSD.  Enjoy!
 
 ## Credits
-See [https://github.com/cymric73/mintBSD/blob/master/CREDITS.txt](https://github.com/cymric73/mintBSD/blob/master/CREDITS.txt "Credits")
+See [https://raw.githubusercontent.com/cymric73/mintBSD/master/CREDITS.txt](https://raw.githubusercontent.com/cymric73/mintBSD/master/CREDITS.txt "Credits")
