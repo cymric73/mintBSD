@@ -38,7 +38,7 @@ mate-system-monitor mate-terminal mate-calc gucharmap \
 mate-extras mate-media mate-utils mate-themes mate-icon-theme \
 paper-icon-theme-1.5.0p1 paper-gtk-theme-2.1.0p1 dconf-editor \
 nano wget git htop xmlstarlet alpine \
-chromium \
+firefox \
 libreoffice gimp dia vym bluefish grisbi \
 transmission transmission-gtk filezilla \
 vlc handbrake audacity \
