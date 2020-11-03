@@ -2,6 +2,8 @@ MintBSD is a configuration script for [OpenBSD](https://openbsd.org "OpenBSD") 6
 
 *MintBSD is not a distro or theme.  However, this script will install the [Nordic-darker Xfce theme](https://www.xfce-look.org/p/1267246/ "Xfce theme Nordic-darker") .*  
 
+![mintBSD desktop](https://raw.githubusercontent.com/cymric73/mintBSD/master/docs/img/desktop.png "mintBSD desktop")
+
 ## Usage instructions
 ### Pre-requisites
 1. OS Install of OpenBSD 6.8 with X11.
