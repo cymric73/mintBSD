@@ -12,23 +12,22 @@ if [ "$ID" -ne 0 ]
   exit
 fi
 
-### RUN EXTRAS IF '-x' ARG USED
+### RUN CIRA-DNS '-ciradns' ARG USED
 ARG1=$1
-if [[ $ARG1 = "-x" ]]
+if [[ $ARG1 = "-ciradns" ]]
 then
 
-# Use CIRA Protected DNS, no malware, etc. Set for static and DHCP DNS
+# Use CIRA Protected DNS, no malware.  See https://www.cira.ca/cybersecurity-services/canadian-shield/configure. Set for static and DHCP DNS
 echo "nameserver 149.112.121.20" > /etc/resolv.conf
 echo "nameserver 149.112.122.20" >> /etc/resolv.conf
 echo "supersede domain-name-servers 149.112.121.20, 149.112.122.20;" > /etc/dhclient.conf
 
-echo "Done running makeminty.sh extras"
+echo "Done running makeminty.sh -ciradns"
 exit 0
 fi
+### END CIRA-DNS
 
-### END EXTRAS
 ### MAIN CONFIG BEGINS
-
 ### install packages
 pkg_add unzip-6.0p13 \
 slim slim-themes \
@@ -67,6 +66,7 @@ cp /usr/local/share/slim/themes/previous/background.png /usr/local/share/slim/th
 gsettings set org.mate.background picture-filename ''
 gsettings set org.mate.background color-shading-type 'solid'
 gsettings set org.mate.background primary-color 'rgb(80,80,117)'
+# HEX colour is #505075
 
 ### DCONF settings
 echo "user-db:user" > /etc/dconf/profile/user
@@ -101,7 +101,13 @@ sed -i.old1 "s/<distance name=\"left_width\" value=\"1\" \/>/<distance name=\"le
 sed -i.old2 "s/<distance name=\"right_width\" value=\"1\" \/>/<distance name=\"right_width\" value=\"5\" \/>/g" /usr/local/share/themes/Paper/metacity-1/metacity-theme.xml
 sed -i.old3 "s/<distance name=\"bottom_height\" value=\"1\" \/>/<distance name=\"bottom_height\" value=\"5\" \/>/g" /usr/local/share/themes/Paper/metacity-1/metacity-theme.xml
 
-### Xfce mods coming soon
+### Install Nordic-darker theme
+rm -rf /tmp/makeminty
+mkdir /tmp/makeminty
+wget https://www.mintbsd.com/assets/Nordic-darker.tar.xz -P /tmp/makeminty
+unxz /tmp/makeminty/Nordic-darker.tar.xz
+tar -xf /tmp/makeminty/Nordic-darker.tar -C /tmp/makeminty
+mv /tmp/makeminty/Nordic-darker /usr/local/share/themes
 
 ### end of script OUTPUT
 echo "\n### makeminty.sh has completed ###"
