@@ -1,6 +1,6 @@
 MintBSD is a configuration script for [OpenBSD](https://openbsd.org "OpenBSD") 6.8 that will transform an OpenBSD install (with X11) into a [Xfce](https://xfce.org/ "Xfce desktop environment") desktop workstation.  The goal of the project is to create a stable, usable and familiar desktop experience, bundled with commonly used desktop applications.  We achieve this using OpenBSD ports software and minimal configuration as required.
 
-*MintBSD is not a distro or Xfce theme.*  
+*MintBSD is not a distro.  This script will install the Nordic-darker Xfce theme.*  
 
 ## Usage instructions
 ### Pre-requisites
@@ -16,10 +16,11 @@ Run the following commands as root:
 # ./makeminty.sh
 ```
 ### Summary of results
-Installs Xfce graphical deskop & popular applications: Chromium, LibreOffice, VLC, GIMP, Tramsmission, Handbrake, Wireshare, etc. Configure sensible and professional desktop window theme.
+Installs Xfce graphical deskop & popular applications: Firefox, LibreOffice, Geary, KeePassXC, GIMP, VLC, Tramsmission, Handbrake, etc. Configure sensible and professional desktop window theme.
 
 ### Post-requisites
 1. `# cp /etc/skel/.xinitrc /home/jsmith` copy template .xinitrc to home directory of each user you want to login graphically.
+2. Per user preference, change personal desktop theme to Nordic-darker, via Settings > Appearance > Style tab.
 
 ## Screenshots
 [Login screen](https://www.mintbsd.com/img/login.png "mintBSD login screen")
