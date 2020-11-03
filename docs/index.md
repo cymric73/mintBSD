@@ -6,7 +6,7 @@ MintBSD is a configuration script for [OpenBSD](https://openbsd.org "OpenBSD") 6
 
 ## Usage instructions
 ### Pre-requisites
-1. OS Install of OpenBSD 6.8 with X11.
+1. OS install of OpenBSD 6.8 with X11.  This script is meant to be run on a fresh install of OpenBSD as it may clobber some pre-existing configuration settings.
 2. `df -h /usr/local` you will need at least 5GB free space on the /usr/local partition.  Based on default OpenBSD installer auto-partion rules, you would need to start with an 80GB or greater HDD allocation.
 
 ### Start
