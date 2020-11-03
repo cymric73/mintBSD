@@ -1,6 +1,6 @@
 MintBSD is a configuration script for [OpenBSD](https://openbsd.org "OpenBSD") 6.8 that will transform an OpenBSD install (with X11) into a [Xfce](https://xfce.org/ "Xfce desktop environment") desktop workstation.  The goal of the project is to create a stable, usable and familiar desktop experience, bundled with commonly used desktop applications.  We achieve this using OpenBSD ports software and minimal configuration as required.
 
-*MintBSD is not a distro.  This script will install the Nordic-darker Xfce theme.*  
+*MintBSD is not a distro or theme.  However, this script will install the Nordic-darker Xfce theme.*  
 
 ## Usage instructions
 ### Pre-requisites
