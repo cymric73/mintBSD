@@ -109,6 +109,15 @@ unxz /tmp/makeminty/Nordic-darker.tar.xz
 tar -xf /tmp/makeminty/Nordic-darker.tar -C /tmp/makeminty
 mv /tmp/makeminty/Nordic-darker /usr/local/share/themes
 
+## Install mintBSD official wallpaper
+wget https://www.mintbsd.com/img/mintbsd-wallpaper.png -P /tmp/makeminty
+install -b /tmp/makeminty/mintbsd-wallpaper.png /usr/local/share/backgrounds/xfce/
+chown root:bin /usr/local/share/backgrounds/xfce/mintbsd-wallpaper.png
+chmod 644 /usr/local/share/backgrounds/xfce/mintbsd-wallpaper.png
+
+## cleanup
+rm -rf /tmp/makeminty
+
 ### end of script OUTPUT
 echo "\n### makeminty.sh has completed ###"
 echo "# Copy /etc/skel/.xinitrc to home directory of each user to enable graphical login"
